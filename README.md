@@ -52,6 +52,8 @@ $ go get github.com/Workiva/frugal
 1.  Install the CLI binary
     ```bash
     $ cd $GOPATH/src/github.com/Workiva/frugal
+    $ curl https://glide.sh/get | sh  # install glide
+    $ glide install  # get dependencies
     $ go install
     ```
 

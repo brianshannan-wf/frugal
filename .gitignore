@@ -48,6 +48,7 @@ Library/
 # Go lib specific
 lib/go/vendor
 lib/go/glide.lock
+vendor/
 examples/go/vendor
 examples/go/glide.lock
 
