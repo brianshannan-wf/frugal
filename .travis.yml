@@ -23,7 +23,7 @@ before_install:
   - mkvirtualenv py3 -p $(which python3) && make deps-asyncio
 
 script:
-  - cd $TRAVIS_BUILD_DIR && go test ./test -race
+  - cd $TRAVIS_BUILD_DIR && glide install && go test ./test -race
   - cd $TRAVIS_BUILD_DIR/lib/go && glide install && go test -race $(glide nv)
   - cd $TRAVIS_BUILD_DIR/lib/python
   - workon py2 && make xunit-py2 flake8-py2
