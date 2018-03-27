@@ -12,7 +12,9 @@ mkdir -p /go/src/github.com/Workiva/
 ln -s /testing/ /go/src/github.com/Workiva/frugal
 
 # Install frugal
-cd $GOPATH/src/github.com/Workiva/frugal && go install
+cd $GOPATH/src/github.com/Workiva/frugal
+glide install
+go install
 
 # Start gnatsd
 gnatsd &

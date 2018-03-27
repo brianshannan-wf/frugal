@@ -5,7 +5,7 @@ set -exo pipefail
 ./scripts/skynet/skynet_setup.sh
 
 export FRUGAL_HOME=$GOPATH/src/github.com/Workiva/frugal
-cd ${FRUGAL_HOME}
+cd $FRUGAL_HOME
 
 # TODO: Move all of this to Makefile
 # Remove any leftover log files (necessary for skynet-cli)
